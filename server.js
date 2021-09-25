@@ -2460,7 +2460,20 @@ this.GoesThroughWalls = false
           }, 2500);
         };
       }
-       }
+       }// inside the updateAABB funtion of the Entity \\
+      if (this.isDead()) {
+if (this.label === "domination") {
+  if (this.evolveTick == null || this.evolveTick == undefined) this.evolveTick = 8; // Replace 100 with the amount you want. Warning, it is slow.
+  this.evolveTick --; // let it Evolve
+  if (this.evolveTick <= 0) {
+    sockets.broadcast("The EK-1 is evolving");
+    setTimeout(() => {
+      sockets.broadcast("The EK-1 evolved into EK-2");
+      this.define(Class.EK2);// let it evolve into the EK-2
+    }, 80); // system added by blitzkrieg
+  }
+}
+      } //fuck Richi german and his stolen tanks!
     
       
             // Initalize message arrays
