@@ -5086,7 +5086,7 @@ var maintainloop = (() => {
        break; 
           case 24:
               case 25:
-            choice = [[Class.Celestial_pelkija_ai], 1, "pelkija",  "norm"];
+            choice = [[Class.Celestial_palkija_ai], 1, "pelkija",  "norm"];
        break;
           case 26:
             choice = [[Class.Celestial_zaphkiel_ai], 1, "zaphkiel", "norm"];
