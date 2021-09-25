@@ -5019,26 +5019,31 @@ var maintainloop = (() => {
 
             break;
           case 1:
-            choice = [[Class.palisade, Class.elite_gunner], 2, "castle", "norm"];
+            choice = [[Class.palisade, Class.elite_gunner], 3, "castle", "norm"];
          break;            
           case 2:
-            choice = [[Class.elite_destroyer, Class.elite_gunner, Class.elite_sprayer], 3, "a", "norm"];
+            choice = [[Class.elite_destroyer, Class.elite_gunner, Class.elite_sprayer], 6, "a", "norm"];
         break; 
           case 3:
-            choice = [[Class.elite_KILLER], 3, "a", "norm"];
+            choice = [[Class.elite_KILLER], 7, "a", "norm"];
         break; 
           case 4:
-            choice = [[Class.elite_battelship, Class.elite_destroyer, Class.elite_gunner, Class.elite_sprayer], 3, "a", "norm"];
+            choice = [[Class.elite_battelship, Class.elite_destroyer, Class.elite_gunner, Class.elite_sprayer], 8, "a", "norm"];
         break; 
               case 5:
-            choice = [[Class.elite_splitter, Class.elite_destroyer, Class.elite_gunner, Class.elite_sprayer], 4, "a", "norm"];
+            choice = [[Class.elite_splitter, Class.elite_destroyer, Class.elite_gunner, Class.elite_sprayer], 3, "a", "norm"];
+       break;  
+              case 6:
+            choice = [[Class.elite_splitter, Class.elite_destroyer, Class.elite_gunner, Class.elite_sprayer], 3, "a", "norm"];
+            sockets.broadcast("The Ce");
        break; 
           case 6:
             choice = [[Class.pentagon], 1, "a", "nest"];
        break; 
           case 7:
             setTimeout(() => closemode(), 1e3);
-            sockets.broadcast("Closing Arena Due socket timeout!");
+            sockets.broadcast("Blue has Won the game!");
+            sockets.broadcast("Closing Arena Due Socket timeout!");
             break;     
                 }
                 boss.prepareToSpawn(...choice);
