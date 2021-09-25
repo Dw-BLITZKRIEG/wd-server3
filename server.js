@@ -5037,21 +5037,19 @@ var maintainloop = (() => {
             choice = [[Class.Celestial_freja_ai], 1, "freja", "norm"];
             sockets.broadcast("The Celestials came back, the world tempers, causing drama, will you defeat them?");
        break; 
-              case 7:
-            choice = [[Class.Celestial_freja_ai, ], 2,  "norm"];
-       break; 
-              case 6:
-            choice = [[Class.Celestial_freja_ai], 1, "freja", "norm"];
-            sockets.broadcast("The Celestials came back, the world tempers, causing drama, will you defeat them?");
-       break; 
-              case 6:
-            choice = [[Class.Celestial_freja_ai], 1, "freja", "norm"];
-            sockets.broadcast("The Celestials came back, the world tempers, causing drama, will you defeat them?");
-       break; 
           case 7:
-            choice = [[Class.pentagon], 1, "a", "nest"];
+            choice = [[Class.pentagon], 2, "a", "nest"];
        break; 
-          case 8:
+              case 8:
+            choice = [[Class.Celestial_freja_ai], 1, "freja",  "norm"];
+       break;
+          case 9:
+            choice = [[Class.Celestial_theia_ai], 1, "theia", "norm"];
+       break; 
+          case 10:
+            choice = [[Class.Class.elite_splitter, Class.elite_destroyer, Class.elite_gunner, Class.elite_sprayer], 4, "a", "norm"];
+       break; 
+          case 11:
             setTimeout(() => closemode(), 1e3);
             sockets.broadcast("Blue has Won the game!");
             sockets.broadcast("Closing Arena Due Socket timeout!");
