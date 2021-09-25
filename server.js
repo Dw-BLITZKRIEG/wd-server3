@@ -5009,29 +5009,29 @@ var maintainloop = (() => {
             };
         })();
         return census => {
-            if (timer > 3500 && ran.dice(1550 - timer)) {
+            if (timer > 100 && ran.dice(15 - timer)) {
                 util.log('[SPAWN] Preparing to spawn...');
                 timer = 0;
                 let choice = [];
                 switch (wave) {
           case 0:
-            choice = [[Class.elite_destroyer], 1, "castle", "nest"];
+            choice = [[Class.elite_destroyer], 2, "castle", "nest"];
 
             break;
           case 1:
-            choice = [[Class.palisade], 1, "castle", "norm"];
+            choice = [[Class.palisade, Class.elite_gunner], 2, "castle", "norm"];
          break;            
           case 2:
-            choice = [[Class.elite_destroyer, Class.elite_gunner, Class.elite_sprayer], 3, "a", "nest"];
+            choice = [[Class.elite_destroyer, Class.elite_gunner, Class.elite_sprayer], 3, "a", "norm"];
         break; 
           case 3:
-            choice = [[Class.elite_KILLER], 1, "a", "nest"];
+            choice = [[Class.elite_KILLER], 3, "a", "norm"];
         break; 
           case 4:
-            choice = [[Class.elite_battelship], 1, "a", "nest"];
+            choice = [[Class.elite_battelship, Class.elite_destroyer, Class.elite_gunner, Class.elite_sprayer], 3, "a", "norm"];
         break; 
-              case 1:
-            choice = [[Class.elite_splitter], 1, "a", "nest"];
+              case 5:
+            choice = [[Class.elite_splitter, Class.elite_destroyer, Class.elite_gunner, Class.elite_sprayer], 4, "a", "norm"];
        break; 
           case 6:
             choice = [[Class.pentagon], 1, "a", "nest"];
