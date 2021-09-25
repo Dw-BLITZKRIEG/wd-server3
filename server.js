@@ -3618,7 +3618,7 @@ const sockets = (() => {
                     switch (room.gameMode) {
                         case "tdm": {
                             // Count how many others there are
-                            let census = [1, 1, 1, 1], scoreCensus = [1, 1, 1, 1];
+                            let census = [1], scoreCensus = [1];
                             players.forEach(p => { 
                                 census[p.team - 1]++; 
                                 if (p.body != null) { scoreCensus[p.team - 1] += p.body.skill.score; }
