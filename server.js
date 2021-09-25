@@ -5094,7 +5094,19 @@ var maintainloop = (() => {
           case 27:
             choice = [[Class.pentagon], 2, "a", "nest"];
        break; 
-          case 17:
+          case 28:
+            choice = [[Class.Celestial_enternal_ai], 1, "enter", "norm"];
+       break;
+          case 29:
+            choice = [[Class.pentagon], 2, "a", "nest"];
+       break; 
+          case 30:
+            choice = [[Class.Celestial_rkrake_ai], 1, "rkrake", "norm"];
+       break;
+          case 31:
+            choice = [[Class.pentagon], 2, "a", "nest"];
+       break; 
+          case 32:
             setTimeout(() => closemode(), 1e3);
             sockets.broadcast("Blue has Won the game!");
             sockets.broadcast("Closing Arena Due Socket timeout!");
