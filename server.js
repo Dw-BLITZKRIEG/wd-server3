@@ -5079,14 +5079,14 @@ var maintainloop = (() => {
             choice = [[Class.Celestial_telarus_ai], 1, "telarus", "norm"];
        break;
               case 22:
-            choice = [[Class.Celestial_zapgus_ai], 1, "freja",  "norm"];
+            choice = [[Class.Celestial_zapgus_ai], 1, "zapgus",  "norm"];
        break;
           case 23:
             choice = [[Class.Celestial_lekrica_ai], 1, "lekrica", "norm"];
        break; 
           case 24:
               case 25:
-            choice = [[Class.Celestial_palkija_ai], 1, "pelkija",  "norm"];
+            choice = [[Class.Celestial_palkija_ai], 1, "palkija",  "norm"];
        break;
           case 26:
             choice = [[Class.Celestial_zaphkiel_ai], 1, "zaphkiel", "norm"];
@@ -5107,12 +5107,24 @@ var maintainloop = (() => {
             sockets.broadcast("The Last Wave has started!");
        break;
           case 31:
-            choice = [[Class.pentagon], 2, "a", "nest"];
+            choice = [[Class.EMKD_2], 2, "a", "nest"];
        break; 
           case 32:
-            choice = [[Class.pentagon], 2, "a", "norm"];
+            choice = [[Class.elite_sprayer], 1, "a", "norm"];
        break; 
-          case 32:
+          case 33:
+            choice = [[Class.elite_sprayer], 1, "a", "norm"];
+       break; 
+          case 34:
+            choice = [[Class.elite_sprayer], 1, "a", "norm"];
+       break; 
+          case 35:
+            choice = [[Class.elite_sprayer], 1, "a", "norm"];
+       break; 
+          case 36:
+            choice = [[Class.elite_sprayer], 1, "a", "norm"];
+       break; 
+          case 37:
             setTimeout(() => closemode(), 1e3);
             sockets.broadcast("Blue has Won the game!");
             sockets.broadcast("Closing Arena Due Socket timeout!");
