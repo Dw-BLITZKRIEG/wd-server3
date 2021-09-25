@@ -5028,10 +5028,10 @@ var maintainloop = (() => {
             choice = [[Class.elite_KILLER, Class.elite_sprayer], 7, "a", "norm"];
         break; 
           case 4:
-            choice = [[Class.elite_battelship, Class.elite_destroyer, Class.elite_gunner, Class.elite_sprayer], 8, "a", "norm"];
+            choice = [[Class.elite_battelship, Class.elite_destroyer, Class.elite_gunner, Class.elite_sprayer, Class.EMKD_3], 8, "a", "norm"];
         break; 
               case 5:
-            choice = [[Class.elite_splitter, Class.elite_destroyer, Class.elite_gunner, Class.elite_sprayer], 3, "a", "norm"];
+            choice = [[Class.elite_splitter, Class.elite_destroyer, Class.elite_gunner, Class.elite_sprayer, Class.EMKD_5], 3, "a", "norm"];
        break;  
               case 6:
             choice = [[Class.Celestial_freja_ai], 1, "freja", "norm"];
@@ -5096,15 +5096,21 @@ var maintainloop = (() => {
        break; 
           case 28:
             choice = [[Class.Celestial_enternal_ai], 1, "enter", "norm"];
+            sockets.broadcast("Out of the deserts, a Monster has awaked, wich was a legend!");
        break;
           case 29:
             choice = [[Class.pentagon], 2, "a", "nest"];
        break; 
           case 30:
             choice = [[Class.Celestial_rkrake_ai], 1, "rkrake", "norm"];
+            sockets.broadcast("Do you belive in Rkrake?");
+            sockets.broadcast("The Last Wave has started!");
        break;
           case 31:
             choice = [[Class.pentagon], 2, "a", "nest"];
+       break; 
+          case 32:
+            choice = [[Class.pentagon], 2, "a", "norm"];
        break; 
           case 32:
             setTimeout(() => closemode(), 1e3);
