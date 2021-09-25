@@ -5025,7 +5025,7 @@ var maintainloop = (() => {
             choice = [[Class.elite_destroyer, Class.elite_gunner, Class.elite_sprayer], 6, "a", "norm"];
         break; 
           case 3:
-            choice = [[Class.elite_KILLER, Class.elite_sprayer, Class.elite_battleship], 7, "a", "norm"];
+            choice = [[Class.elite_KILLER, Class.elite_sprayer], 7, "a", "norm"];
         break; 
           case 4:
             choice = [[Class.elite_battelship, Class.elite_destroyer, Class.elite_gunner, Class.elite_sprayer], 8, "a", "norm"];
@@ -5047,7 +5047,7 @@ var maintainloop = (() => {
             choice = [[Class.Celestial_theia_ai], 1, "theia", "norm"];
        break; 
           case 10:
-            choice = [[Class.Class.elite_splitter, Class.elite_destroyer, Class.elite_gunner, Class.elite_sprayer], 4, "a", "norm"];
+            choice = [[Class.elite_splitter, Class.elite_destroyer, Class.elite_gunner, Class.elite_sprayer], 4, "a", "norm"];
        break; 
           case 11:
             setTimeout(() => closemode(), 1e3);
