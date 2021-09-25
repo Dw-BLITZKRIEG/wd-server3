@@ -5065,32 +5065,35 @@ var maintainloop = (() => {
           case 16:
             choice = [[Class.elite_splitter, Class.elite_destroyer, Class.elite_gunner, Class.elite_sprayer], 4, "a", "norm"];
        break; 
-              case 11:
+              case 17:
             choice = [[Class.Celestial_freja_ai], 1, "freja",  "norm"];
        break;
-          case 12:
+          case 18:
             choice = [[Class.Celestial_theia_ai], 1, "theia", "norm"];
        break; 
-          case 13:
-              case 14:
+          case 19:
+              case 20:
             choice = [[Class.Celestial_melkia_ai], 1, "melkia",  "norm"];
        break;
-          case 15:
+          case 21:
             choice = [[Class.Celestial_telarus_ai], 1, "telarus", "norm"];
        break;
-              case 11:
+              case 22:
             choice = [[Class.Celestial_zapgus_ai], 1, "freja",  "norm"];
        break;
-          case 12:
-            choice = [[Class.Celestial_lekrica_ai], 1, "theia", "norm"];
+          case 23:
+            choice = [[Class.Celestial_lekrica_ai], 1, "lekrica", "norm"];
        break; 
-          case 13:
-              case 14:
-            choice = [[Class.Celestial_pelkija_ai], 1, "melkia",  "norm"];
+          case 24:
+              case 25:
+            choice = [[Class.Celestial_pelkija_ai], 1, "pelkija",  "norm"];
        break;
-          case 15:
-            choice = [[Class.Celestial_zaphkiel_ai], 1, "telarus", "norm"];
+          case 26:
+            choice = [[Class.Celestial_zaphkiel_ai], 1, "zaphkiel", "norm"];
        break;
+          case 27:
+            choice = [[Class.pentagon], 2, "a", "nest"];
+       break; 
           case 17:
             setTimeout(() => closemode(), 1e3);
             sockets.broadcast("Blue has Won the game!");
