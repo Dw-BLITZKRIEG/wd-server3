@@ -5167,7 +5167,7 @@ var maintainloop = (() => {
          //Make base protectors if needed.
             let f = (loc, team) => { 
                 let o = new Entity(loc) 
-                let arrayOfClasses = [Class.base_drone]                  
+                let arrayOfClasses = [Class.baseProtectorX]                  
                       let newClass = arrayOfClasses[Math.floor(Math.random() * arrayOfClasses.length)];
                   o.define(newClass);
                     o.team = -team;
@@ -5178,7 +5178,7 @@ var maintainloop = (() => {
           
           } let f2 = (loc, team) => { 
                 let o = new Entity(loc) 
-                let arrayOfClasses = [Class.base_drone]                  
+                let arrayOfClasses = [Class.protectortwin]                  
                       let newClass = arrayOfClasses[Math.floor(Math.random() * arrayOfClasses.length)];
                   o.define(newClass);
                     o.team = -team;

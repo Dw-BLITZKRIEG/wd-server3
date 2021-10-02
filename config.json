@@ -17,12 +17,12 @@
   "RANDOM_COLORS": false,
   "BANNED_CHARACTER_REGEX": "/[\uFDFD\u200E\u0000]/gi", 
   "ROOM_SETUP": [
-    ["bas1", "bap1", "acsp", "acsp", "norm", "norm", "acsp"],
-    ["bap1", "norm", "norm", "norm", "norm", "norm", "norm"],
-    ["acsp", "norm", "norm", "dom3", "norm", "norm", "norm"],
-    ["norm", "norm", "dom1", "nest", "dom2", "norm", "norm"],
-    ["norm", "norm", "norm", "dom4", "norm", "norm", "norm"],
-    ["norm", "norm", "norm", "norm", "norm", "norm", "norm"],
+    ["norm", "norm", "acsp", "acsp", "norm", "norm", "acsp"],
+    ["norm", "norm", "norm", "bad1", "norm", "norm", "norm"],
+    ["acsp", "norm", "bas1", "dom3", "bas1", "norm", "norm"],
+    ["norm", "bad1", "dom1", "nest", "dom2", "bad1", "norm"],
+    ["norm", "norm", "bas1", "dom4", "bas1", "norm", "norm"],
+    ["norm", "norm", "norm", "bad1", "norm", "norm", "norm"],
     ["acsp", "norm", "norm", "acsp", "norm", "norm", "acsp"]
    
   ],
