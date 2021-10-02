@@ -5038,28 +5038,30 @@ var maintainloop = (() => {
             choice = [[Class.elite_splitter, Class.elite_destroyer, Class.elite_gunner, Class.elite_sprayer, Class.EMKD_5], 3, "a", "norm"];
        break;  
               case 6:
+            choice = [[Class.gunship_ai], 1, "gun", "norm"];
+       break; 
+              case 7:
             choice = [[Class.Celestial_freja_ai], 1, "freja", "norm"];
             sockets.broadcast("The Celestials came back, the world tempers, causing drama, will you defeat them?");
        break; 
-          case 7:
+          case 8:
             choice = [[Class.pentagon], 2, "a", "nest"];
        break; 
-              case 8:
+              case 9:
             choice = [[Class.Celestial_freja_ai], 1, "freja",  "norm"];
        break;
-          case 9:
+          case 10:
             choice = [[Class.Celestial_theia_ai], 1, "theia", "norm"];
        break; 
-          case 10:
+          case 11:
             choice = [[Class.elite_splitter, Class.elite_destroyer, Class.elite_gunner, Class.elite_sprayer], 4, "a", "norm"];
        break; 
-              case 11:
+              case 12:
             choice = [[Class.Celestial_freja_ai], 1, "freja",  "norm"];
        break;
-          case 12:
+          case 13:
             choice = [[Class.Celestial_theia_ai], 1, "theia", "norm"];
        break; 
-          case 13:
               case 14:
             choice = [[Class.Celestial_melkia_ai], 1, "melkia",  "norm"];
        break;
@@ -5075,43 +5077,47 @@ var maintainloop = (() => {
           case 18:
             choice = [[Class.Celestial_theia_ai], 1, "theia", "norm"];
        break; 
-          case 19:
-              case 20:
+              case 19:
             choice = [[Class.Celestial_melkia_ai], 1, "melkia",  "norm"];
        break;
-          case 21:
+          case 20:
             choice = [[Class.Celestial_telarus_ai], 1, "telarus", "norm"];
        break;
-              case 22:
+              case 21:
             choice = [[Class.Celestial_zapgus_ai], 1, "zapgus",  "norm"];
        break;
-          case 23:
+          case 22:
             choice = [[Class.Celestial_lekrica_ai], 1, "lekrica", "norm"];
        break; 
-          case 24:
-              case 25:
+              case 23:
             choice = [[Class.Celestial_palkija_ai], 1, "palkija",  "norm"];
        break;
-          case 26:
+          case 24:
             choice = [[Class.Celestial_zaphkiel_ai], 1, "zaphkiel", "norm"];
+       break;
+          case 25:
+            choice = [[Class.pentagon], 2, "a", "nest"];
+       break; 
+          case 26:
+            choice = [[Class.Celestial_enternal_ai], 1, "enter", "norm"];
+            sockets.broadcast("Out of the deserts, a Monster has awaked, wich was a legend!");
        break;
           case 27:
             choice = [[Class.pentagon], 2, "a", "nest"];
        break; 
           case 28:
-            choice = [[Class.Celestial_enternal_ai], 1, "enter", "norm"];
-            sockets.broadcast("Out of the deserts, a Monster has awaked, wich was a legend!");
-       break;
-          case 29:
-            choice = [[Class.pentagon], 2, "a", "nest"];
-       break; 
-          case 30:
             choice = [[Class.Celestial_rkrake_ai], 1, "rkrake", "norm"];
             sockets.broadcast("Do you belive in Rkrake?");
             sockets.broadcast("The Last Wave has started!");
        break;
-          case 31:
+          case 29:
             choice = [[Class.EMKD_2], 2, "a", "nest"];
+       break; 
+          case 30:
+            choice = [[Class.elite_sprayer], 1, "a", "norm"];
+       break; 
+          case 31:
+            choice = [[Class.elite_sprayer], 1, "a", "norm"];
        break; 
           case 32:
             choice = [[Class.elite_sprayer], 1, "a", "norm"];
@@ -5123,12 +5129,6 @@ var maintainloop = (() => {
             choice = [[Class.elite_sprayer], 1, "a", "norm"];
        break; 
           case 35:
-            choice = [[Class.elite_sprayer], 1, "a", "norm"];
-       break; 
-          case 36:
-            choice = [[Class.elite_sprayer], 1, "a", "norm"];
-       break; 
-          case 37:
             setTimeout(() => closemode(), 1e3);
             sockets.broadcast("Blue has Won the game!");
             sockets.broadcast("Closing Arena Due Socket timeout!");
