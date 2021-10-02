@@ -75,6 +75,10 @@ const room = {
     room.findType('bap2');
     room.findType('bap3');
     room.findType('bap4');
+    room.findType('bad1');
+    room.findType('bad2');
+    room.findType('bad3');
+    room.findType('bad4');
     room.findType('roid');
     room.findType('rock');
 for (let it = 1; it < 10; it++){
@@ -5171,6 +5175,17 @@ var maintainloop = (() => {
             };
             for (let i=1; i<5; i++) {
                 room['bas' + i].forEach((loc) => { f(loc, i); }); 
+          
+          } let f2 = (loc, team) => { 
+                let o = new Entity(loc) 
+                let arrayOfClasses = [Class.base_drone]                  
+                      let newClass = arrayOfClasses[Math.floor(Math.random() * arrayOfClasses.length)];
+                  o.define(newClass);
+                    o.team = -team;
+                    o.color = [17, 17, 17, ,17][team-1];
+            };
+            for (let i=1; i<5; i++) {
+                room['bad' + i].forEach((loc) => { f2(loc, i); }); 
           
           }
       let closearenaColor = 12;
