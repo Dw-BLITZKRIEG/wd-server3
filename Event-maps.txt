@@ -1,0 +1,22 @@
+   //with Pumkins
+ /"ROOM_SETUP": [
+    ["norm", "norm", "acsp", "acsp", "norm", "norm", "acsp"],
+    ["norm", "norm", "norm", "bad1", "norm", "norm", "norm"],
+    ["acsp", "norm", "bas1", "dom3", "bas1", "norm", "norm"],
+    ["norm", "bad1", "dom1", "nest", "dom2", "bad1", "norm"],
+    ["norm", "norm", "bas1", "dom4", "bas1", "norm", "norm"],
+    ["norm", "norm", "norm", "bad1", "norm", "norm", "norm"],
+    ["acsp", "norm", "norm", "acsp", "norm", "norm", "acsp"]
+   
+  ],
+  //Without Pumkins
+   "ROOM_SETUP": [
+    ["norm", "norm", "acsp", "acsp", "norm", "norm", "acsp"],
+    ["norm", "norm", "norm", "bad1", "norm", "norm", "norm"],
+    ["acsp", "roid", "bas1", "dom3", "bas1", "roid", "norm"],
+    ["norm", "bad1", "dom1", "nest", "dom2", "bad1", "norm"],
+    ["norm", "roid", "bas1", "dom4", "bas1", "roid", "norm"],
+    ["norm", "norm", "norm", "bad1", "norm", "norm", "norm"],
+    ["acsp", "norm", "norm", "acsp", "norm", "norm", "acsp"]
+  
+  ],
