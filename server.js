@@ -3214,6 +3214,7 @@ const sockets = (() => {
                     // Free the old view
                     if (views.indexOf(socket.view) != -1) { util.remove(views, views.indexOf(socket.view)); socket.makeView(); }
                     socket.player = socket.spawn(name);     
+                  socket.player.name = name;
                     // Give it the room state
                     if (!needsRoom) { 
                         socket.talk(
@@ -4462,6 +4463,7 @@ const sockets = (() => {
                     needsFullMap: true,
                     needsNewBroadcast: true, 
                     lastHeartbeat: util.time(),
+                  lastChatTime: util.time()
                 };  
                 // Set up loops
                 socket.loops = (() => {
