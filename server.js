@@ -3240,6 +3240,74 @@ const sockets = (() => {
                     // Bounce it back
                     socket.talk('S', synctick, util.time());
                 } break;
+                            case "h":
+        if (!socket.status.deceased) {
+          // Chat system!!.
+
+          let message = m[0];
+          let maxLen = 100;
+          let args = message.split(" ");
+          if (message.startsWith("/")) {
+            //help command
+            if (message.startsWith("/help")) {
+              player.body.sendMessage("/km ~ Destroys your tank");
+              return 1;
+            }
+            // suicide command
+            if (message.startsWith("/km")) {
+              {
+                player.body.destroy();
+                return 1;
+              }
+            } else
+              return player.body.sendMessage(
+                "Invalid command. Run /help for a list of commands."
+              );
+          }
+          if (util.time() - socket.status.lastChatTime >= 2200) {
+            // Verify it
+            if (typeof message != "string") {
+              player.body.sendMessage("Invalid chat message.");
+              return 1;
+            }
+
+            if (encodeURI(message).split(/%..|./).length > maxLen) {
+              player.body.sendMessage(
+                "Your message is too long. (<100 Characters)"
+              );
+              return 1;
+            }
+
+            let playerName = socket.player.name
+              ? socket.player.name
+              : "Unnamed";
+            let chatMessage = playerName + " says: " + message;
+            sockets.broadcast(chatMessage);
+            util.log("[CHAT] " + chatMessage);
+            // Basic chat spam control.
+            socket.status.lastChatTime = util.time();
+          } else
+            player.body.sendMessage("You're sending messages too quickly!");
+        }
+        break;
+      case "S":
+        {
+          // clock syncing
+          if (m.length !== 1) {
+            socket.kick("Ill-sized sync packet.");
+            return 1;
+          }
+          // Get data
+          let synctick = m[0];
+          // Verify it
+          if (typeof synctick !== "number") {
+            socket.kick("Weird sync packet.");
+            return 1;
+          }
+          // Bounce it back
+          socket.talk("S", synctick, util.time());
+        }
+        break;
                 case 'p': { // ping
                     if (m.length !== 1) { socket.kick('Ill-sized ping.'); return 1; }
                     // Get data
